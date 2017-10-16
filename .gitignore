@@ -1,0 +1,9 @@
+# Junk latex files
+
+*.aux
+*.log
+*.nav
+*.out
+*.snm
+*.toc
+*.vrb

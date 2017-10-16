@@ -1,0 +1,30 @@
+\documentclass[t]{beamer}  
+\usetheme{Berkeley}
+\usepackage{letltxmacro}
+\LetLtxMacro\olditemize\itemize
+\renewcommand{\itemize}[1][<+(1)->]{\olditemize[#1]}
+  \setbeamertemplate{itemize item}[triangle]
+  \setbeamertemplate{itemize subitem}[square]
+  \setbeamertemplate{itemize subsubitem}[circle]                 
+\setbeamertemplate{navigation symbols}{}
+\title{Advantage of using R in report writing and data analysis}
+\author{Rushad Faridi, PhD}
+\institute{University of Dhaka}
+\today{}
+\def\tightlist{}
+
+
+\begin{document}
+\renewcommand{\itemize}[1][<+(1)->]{\olditemize[#1]}
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Outline}
+\tableofcontents
+\end{frame}
+
+\input{stc_R_pres}
+
+\end{document}

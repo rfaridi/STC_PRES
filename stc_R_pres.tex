@@ -1,0 +1,206 @@
+\section{History of R}\label{history-of-r}
+
+\section{Advantages of R}\label{advantages-of-r}
+
+\section{Use of R in an NGO}\label{use-of-r-in-an-ngo}
+
+\begin{frame}{Data Analysis}
+
+\begin{itemize}
+\tightlist
+\item
+  R is created to deal with data
+\item
+  Unlike other programs, its not package
+\item
+  It's a full fledged programming language
+\item
+  Particularly developed to do deal with data and statistical analysis
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}{Data visualization}
+
+\begin{itemize}
+\tightlist
+\item
+  Communication of data analysis is hugely dependent on data
+  visualization
+\item
+  Tables are good for summarizing results
+\item
+  Not good for communication
+\item
+  R's graphics capability is unmatched compared to any other statistical
+  packages
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]{Report Writing}
+
+\begin{verbatim}
+* Now comes the most crucial part of report writing
+* Non-profit, NGOs has to write sleuth of reports based on field data
+* Typical work flow
+* Excel, Microsoft word
+* Basic calculation, preparation of tables in excel
+* Formatting of tables in Excel
+* Formatting of tables in word
+* SPSS-EXCEL-MS-Word Workflow
+* Generate tables and cross-tabs in SPSS. 
+  * Export those to excel
+  * Formatting done in Excel
+  * Copy and pasted in Excel
+* STATA-EXCEL-MS-Word Workflow
+* STATA has packages which transforms raw tables in publication quality format
+* But still has to be formatted in excel 
+  * Unless used LaTeX (text processing engine)
+* Then copy and pasted in MS-Word
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{Problem with workflow}
+
+\begin{verbatim}
+* Irrespective of the workflows mentioned above
+* All suffer from a common problem
+* The reports are not reproducible
+* For example, let's you have written a report which includes 
+* 50 Tables
+* 20 Charts
+* This is report that has to be generated Every quarter
+* Therefore in a given workflow in a whole year
+* 200 Tables and 80 charts has to be created in 
+* STATA and SPSS has scripting environment where all the codes of tables can be stored
+* When data changes, the scripts can be run and the all tables will automatically generated
+* But the catch is those are still raw tables
+* Raw tables and graphs code, you write for 50 tables and 20 charts
+* Then reproduce those raw tables and charts by running the script
+* But the problem is that those are still raw tables
+* Therefore, exporting those raw tables still has to be done every time data changes
+* Therefore export raw tables to Excel, formatting those and then again copy and paste those to word has to done 200 times for the tables 
+* Graphs has to be exported to images files("JPG","PNG" etc) and then copied back into the MS-WORD. This has to be done 80 times.
+* Now combine the above problem with placing the pasted tables and graphs in the write place, the wrestle and hussle with putting those tables in the write place which seem to always change places. 
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{R workflow: DRY}
+
+\begin{verbatim}
+* DRY - Don't Repeat Yourself
+* Coding/principle: don't write the same code more than once
+* R is a programming language - follows the same principle
+* In the above workflow: don't repeat Table, don't repeat charts
+* You may say, "Hey its not the same chart, the data are different"
+* Well the numbers are different but it has exactly the same variables and same structure
+* So the output structure is same, input changes
+* Ideal/ripe for DIY
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{R workflow: Reproducible research}
+
+\begin{verbatim}
+* Idea comes from literate programming
+* Description of the code and the code comes together
+* Early implementation in LaTex and R, resulting into Rnw file
+* LaTeX has a steep learning curve, easier is Rmarkdown. 
+* The whole report will be a single markdown script. 
+* Descriptions will be interlaced by the R codes depicting analysis, tables and charts. 
+* Whenever ready, these Rmarkdown files will be knitted to produce output in several formats
+* Docx
+* PDF
+* HTML
+* Therefore every element of a document is in single place. 
+* Ideally, we would just change the dataset and "Knit". 
+* Voila, the next quarter report is ready!
+* Isn't that simply magical!
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{Reading Data}
+
+\begin{verbatim}
+* R can directly read texts and data from PDF
+* From websites, called web scraping. 
+* All the major data sources has API for R
+* WDI
+* FAO
+* UNDP
+* And many more. 
+\end{verbatim}
+
+\end{frame}
+
+\begin{frame}[fragile]{R has image processing capacity}
+
+\begin{verbatim}
+* Recent additon to R family imagemagick package can do advanced image processing als Photoshop
+* Help to create high quality infographics from scripting environment
+  
+\end{verbatim}
+
+\end{frame}
+
+\section{Comparison between R and
+SPSS}\label{comparison-between-r-and-spss}
+
+\section{Comparison between R and
+STATA}\label{comparison-between-r-and-stata}
+
+\begin{verbatim}
+* STATA costs money, R is free
+* STATA is easy to learn, GUI
+* STATA presents results more user-friendly way
+* The thing is that computing is changing drammatically
+* Statistics also changed dramatically
+* The pace will only increase
+* Notable changes :
+* Much larger dataset
+* Increased use of computer intensive analysis
+* Data mining
+* Dynamic computer graphics
+* Automatic report writing
+* Websites for accessing databases
+* Websites for presenting results of statistical analysis
+* In all the above respects, R is ahead of any other statistical packages
+\end{verbatim}
+
+\section{R is not owned by a company, its owned by its
+users}\label{r-is-not-owned-by-a-company-its-owned-by-its-users}
+
+\begin{verbatim}
+*   The users drive R forward
+*   No company can compete with it, cause no company can hire and assemble thousands of such passionate, devoted and talented community of developers and statisticians. 
+\end{verbatim}
+
+\section{Prediction}\label{prediction}
+
+\begin{verbatim}
+*   STATA will become tool for use in introductory statistics courses
+*   For use by people who only want to do relativey basic statistical analysis. 
+\end{verbatim}
+
+\section{Problems in real life}\label{problems-in-real-life}
+
+\begin{verbatim}
+ * You learnt hours/days/months of time spent in learning STATA
+ * Then one fine morning you found that your coold  STATA knowledge can't handle data because of size of data
+ * R is only limited by the power of your computer. 
+\end{verbatim}
+
+\section{User experience}\label{user-experience}
+
+\begin{verbatim}
+*   Students need more help with basic tasks in R
+*   On the other hand Stata is well designed makes it very easy to perform basic tasks. 
+*   Stata becomes cumbersome when it is asked to do a non-standard task
+*   R requires lots of basic skills to do simplest of the things
+*   But comes of its own when you do non-standard tasks. 
+\end{verbatim}
